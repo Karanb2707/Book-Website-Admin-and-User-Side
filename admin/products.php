@@ -104,6 +104,7 @@ if (isset($_GET['delete'])) {
                     <option value="drama">Drama</option>
                     <option value="fantasy">Fantasy</option>
                     <option value="mystery">Mystery</option>
+                    <option value="mythology">Mythology</option>
                 </select>
             </div>
             <div class="inputBox">

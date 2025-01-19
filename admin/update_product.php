@@ -94,6 +94,7 @@ if (isset($_POST['update'])) {
             <option value="drama" <?= $fetch_products['category'] == 'drama' ? 'selected' : ''; ?>>Drama</option>
             <option value="fantasy" <?= $fetch_products['category'] == 'fantasy' ? 'selected' : ''; ?>>Fantasy</option>
             <option value="mystery" <?= $fetch_products['category'] == 'mystery' ? 'selected' : ''; ?>>Mystery</option>
+            <option value="mythology" <?= $fetch_products['category'] == 'mythology' ? 'selected' : ''; ?>>Mythology</option>
         </select>
         <span>Update Image</span>
         <input type="file" name="image" accept="image/jpg, image/jpeg, image/png, image/webp" class="box">
