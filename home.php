@@ -95,27 +95,27 @@ include 'components/wishlist_cart.php';
    <div class="swiper-wrapper">
 
    <a href="category.php?category=poetry" class="swiper-slide slide">
-      <img src="images/icon-1.png" alt="">
+      <img src="images/Poetry.png" alt="">
       <h3>Poetry</h3>
    </a>
 
    <a href="category.php?category=fiction" class="swiper-slide slide">
-      <img src="images/icon-2.png" alt="">
+      <img src="images/Fiction.png" alt="">
       <h3>Fiction</h3>
    </a>
 
    <a href="category.php?category=drama" class="swiper-slide slide">
-      <img src="images/icon-3.png" alt="">
+      <img src="images/Drama.png" alt="">
       <h3>Drama</h3>
    </a>
 
    <a href="category.php?category=fantasy" class="swiper-slide slide">
-      <img src="images/icon-4.png" alt="">
+      <img src="images/Fantasy.png" alt="">
       <h3>Fantasy</h3>
    </a>
 
    <a href="category.php?category=mystery" class="swiper-slide slide">
-      <img src="images/icon-5.png" alt="">
+      <img src="images/Mystery.png" alt="">
       <h3>Mystery</h3>
    </a>
 
