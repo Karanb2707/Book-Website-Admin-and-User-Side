@@ -119,7 +119,7 @@ include 'components/wishlist_cart.php';
       <h3>Mystery</h3>
    </a>
 
-   <a href="category.php?category=mystery" class="swiper-slide slide">
+   <a href="category.php?category=mythology" class="swiper-slide slide">
       <img src="images/Mythology.png" alt="">
       <h3>Mythology</h3>
    </a>

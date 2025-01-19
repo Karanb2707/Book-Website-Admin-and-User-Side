@@ -15,7 +15,7 @@ if (isset($_POST['verify'])) {
 
     if ($otp_entered == $otp_sent) {
         $placed_on = date('Y-m-d H:i:s');
-        $payment_status = 'Success'; 
+        $payment_status = 'completed'; 
 
         // Insert order into the database
         $insert_order = $conn->prepare("INSERT INTO `orders`(user_id, name, number, email, method, address, total_products, total_price, placed_on, payment_status) VALUES(?,?,?,?,?,?,?,?,?,?)");
