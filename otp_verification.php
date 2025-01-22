@@ -55,8 +55,8 @@ if (isset($_POST['verify'])) {
     <title>OTP Verification</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -65,17 +65,21 @@ if (isset($_POST['verify'])) {
         }
 
         form {
-            background-color: #fff;
-            border: 1px solid #ddd;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-            padding: 2rem;
-            border-radius: 8px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 2.5rem;
             width: 100%;
             max-width: 400px;
+            transition: transform 0.3s;
+        }
+
+        form:hover {
+            transform: scale(1.02);
         }
 
         form h3 {
-            font-size: 24px;
+            font-size: 28px;
             color: #333;
             text-align: center;
             margin-bottom: 20px;
@@ -87,43 +91,46 @@ if (isset($_POST['verify'])) {
 
         .inputBox span {
             display: block;
-            font-size: 14px;
+            font-size: 16px;
             color: #555;
             margin-bottom: 5px;
         }
 
         .inputBox .box {
             width: 100%;
-            padding: 10px;
-            font-size: 14px;
+            padding: 12px;
+            font-size: 16px;
             border: 1px solid #ccc;
-            border-radius: 4px;
+            border-radius: 5px;
             outline: none;
-            transition: border-color 0.3s;
+            transition: border-color 0.3s, box-shadow 0.3s;
         }
 
         .inputBox .box:focus {
-            border-color: #007bff;
+            border-color: #6a11cb;
+            box-shadow: 0 0 5px rgba(106, 17, 203, 0.5);
         }
 
         .btn {
-            background-color: #007bff;
-            color: #fff;
-            font-size: 16px;
-            padding: 10px;
-            border-radius: 4px;
+            background-color: #6a11cb;
+            color: #ffffff;
+            font-size: 18px;
+            padding: 12px;
+            border-radius: 5px;
             border: none;
             cursor: pointer;
             width: 100%;
             text-align: center;
+            transition: background-color 0.3s, transform 0.3s;
         }
 
         .btn:hover {
-            background-color: #0056b3;
+            background-color: #2575fc;
+            transform: translateY(-2px);
         }
 
         .error {
-            color: #f44336;
+            color:rgb(154, 38, 255);
             font-size: 14px;
             text-align: center;
             margin-bottom: 20px;
