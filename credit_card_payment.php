@@ -33,30 +33,32 @@ if (isset($_POST['pay'])) {
     <title>Credit Card Payment</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
+            font-family: 'Poppins', sans-serif;
+            background-color: #eef2f5;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
             margin: 0;
+            color: #333;
         }
 
         form {
-            background-color: #fff;
+            background-color: #ffffff;
             border: 1px solid #ddd;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
             padding: 2rem;
-            border-radius: 8px;
+            border-radius: 10px;
             width: 100%;
             max-width: 400px;
         }
 
         form h3 {
-            font-size: 24px;
-            color: #333;
+            font-size: 28px;
+            color: #2c3e50;
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 1.5rem;
+            font-weight: 600;
         }
 
         .inputBox {
@@ -68,36 +70,47 @@ if (isset($_POST['pay'])) {
             font-size: 14px;
             color: #555;
             margin-bottom: 5px;
+            font-weight: 500;
         }
 
         .inputBox .box {
             width: 100%;
-            padding: 10px;
+            padding: 12px 15px;
             font-size: 14px;
             border: 1px solid #ccc;
-            border-radius: 4px;
+            border-radius: 6px;
             outline: none;
-            transition: border-color 0.3s;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+            box-sizing: border-box;
+            line-height: 1.5;
         }
 
         .inputBox .box:focus {
-            border-color: #007bff;
+            border-color: #3498db;
+            box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
         }
 
         .btn {
-            background-color: #007bff;
-            color: #fff;
+            background-color: #3498db;
+            color: #ffffff;
             font-size: 16px;
-            padding: 10px;
-            border-radius: 4px;
+            font-weight: 500;
+            padding: 12px;
+            border-radius: 6px;
             border: none;
             cursor: pointer;
             width: 100%;
             text-align: center;
+            transition: background-color 0.3s ease, transform 0.2s ease;
         }
 
         .btn:hover {
-            background-color: #0056b3;
+            background-color: #2980b9;
+            transform: translateY(-2px);
+        }
+
+        .btn:active {
+            transform: translateY(0);
         }
 
         /* Pop-up styles */
@@ -108,31 +121,47 @@ if (isset($_POST['pay'])) {
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.5);
+            background: rgba(0, 0, 0, 0.6);
             justify-content: center;
             align-items: center;
+            z-index: 1000;
         }
 
         .popup-content {
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
+            background: #ffffff;
+            padding: 25px 20px;
+            border-radius: 10px;
             text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            max-width: 350px;
+            width: 100%;
         }
 
-        .popup .btn-close {
-            background-color: #f44336;
+        .popup-content h4 {
+            font-size: 20px;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .popup-content .btn-close {
+            background-color: #e74c3c;
             color: white;
-            border: none;
+            font-size: 14px;
             padding: 10px;
+            border: none;
+            border-radius: 6px;
             cursor: pointer;
-            border-radius: 4px;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
         }
 
-        .popup .btn-close:hover {
-            background-color: #d32f2f;
+        .popup-content .btn-close:hover {
+            background-color: #c0392b;
         }
     </style>
+
+
 </head>
 <body>
 
@@ -144,7 +173,7 @@ if (isset($_POST['pay'])) {
         <h3>Credit Card Payment</h3>
         <div class="inputBox">
             <span>Card Number :</span>
-            <input type="text" name="card_number" placeholder="Enter card number" class="box" maxlength="16" required>
+            <input type="text" name="card_number" placeholder="Enter card number" class="box" maxlength="19" required>
         </div>
         <div class="inputBox">
             <span>Expiry Month :</span>
@@ -191,6 +220,18 @@ if (isset($_POST['pay'])) {
     </section>
 
 </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const cardNumberInput = document.querySelector('input[name="card_number"]');
+            
+            cardNumberInput.addEventListener('input', (e) => {
+                let value = e.target.value.replace(/\s+/g, '').replace(/[^0-9]/g, '');
+                if (value.length > 16) value = value.slice(0, 16);
+                let formattedValue = value.match(/.{1,4}/g)?.join(' ') || '';
+                e.target.value = formattedValue;
+            });
+        });
+    </script>
 
 </body>
 </html>
