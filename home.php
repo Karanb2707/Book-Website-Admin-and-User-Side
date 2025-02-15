@@ -32,7 +32,7 @@ include 'components/wishlist_cart.php';
 
 </head>
 <body>
-   
+  
 <?php include 'components/user_header.php'; ?>
 
 <div class="home-bg">
@@ -45,32 +45,31 @@ include 'components/wishlist_cart.php';
 
       <div class="swiper-slide slide">
          <div class="image">
-            <img src="images/home1.png" alt="">
+            <img src="images/HP1.png" alt="">
          </div>
          <div class="content">
-            <span>Only 300 ₹</span>
-            <h3>Harry Potter</h3>
+            <h3>Harry Potter series</h3>
             <a href="shop.php" class="btn">shop now</a>
          </div>
       </div>
 
       <div class="swiper-slide slide">
          <div class="image">
-            <img src="images/home2.png" alt="">
+            <img src="images/105.png" alt="">
          </div>
          <div class="content">
-            <span>Only 500 ₹</span>
-            <h3>One Arranged Murder</h3>
+            <span>Only 175 ₹</span>
+            <h3>the girl in room 105</h3>
             <a href="shop.php" class="btn">shop now</a>
          </div>
       </div>
 
       <div class="swiper-slide slide">
          <div class="image">
-            <img src="images/home3.png" alt="">
+            <img src="images/gita.png" alt="">
          </div>
          <div class="content">
-            <span>Only 400 ₹</span>
+            <span>Only 250 ₹</span>
             <h3>Bhagavad Gita</h3>
             <a href="shop.php" class="btn">shop now</a>
          </div>
@@ -132,6 +131,8 @@ include 'components/wishlist_cart.php';
 
 </section>
 
+<div class="home-bg">
+
 <section class="home-products">
 
    <h1 class="heading">latest products</h1>
@@ -141,7 +142,7 @@ include 'components/wishlist_cart.php';
    <div class="swiper-wrapper">
 
    <?php
-     $select_products = $conn->prepare("SELECT * FROM `products` LIMIT 6"); 
+     $select_products = $conn->prepare("SELECT * FROM `products` LIMIT 9"); 
      $select_products->execute();
      if($select_products->rowCount() > 0){
       while($fetch_product = $select_products->fetch(PDO::FETCH_ASSOC)){
@@ -176,7 +177,7 @@ include 'components/wishlist_cart.php';
 
 </section>
 
-
+</div>
 
 
 

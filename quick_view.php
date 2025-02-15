@@ -33,6 +33,8 @@ include 'components/wishlist_cart.php';
    
 <?php include 'components/user_header.php'; ?>
 
+<div class="home-bg">
+
 <section class="quick-view">
 
    <h1 class="heading">quick view</h1>
@@ -77,6 +79,8 @@ include 'components/wishlist_cart.php';
    ?>
 
 </section>
+
+</div>
 
 <?php include 'components/footer.php'; ?>
 

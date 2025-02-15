@@ -79,6 +79,8 @@ if(isset($_POST['order'])){
    
 <?php include 'components/user_header.php'; ?>
 
+<div class="home-bg">
+
 <section class="checkout-orders">
 
    <form action="" method="POST">
@@ -163,7 +165,7 @@ if(isset($_POST['order'])){
 
 </section>
 
-
+</div>
 
 
 

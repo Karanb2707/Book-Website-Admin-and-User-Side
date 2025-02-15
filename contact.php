@@ -59,6 +59,8 @@ if(isset($_POST['send'])){
    
 <?php include 'components/user_header.php'; ?>
 
+<div class="home-bg">
+
 <section class="contact">
 
    <form action="" method="post">
@@ -72,7 +74,7 @@ if(isset($_POST['send'])){
 
 </section>
 
-
+</div>
 
 
 

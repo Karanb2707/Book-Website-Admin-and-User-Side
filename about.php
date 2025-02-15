@@ -33,6 +33,8 @@ if(isset($_SESSION['user_id'])){
    
 <?php include 'components/user_header.php'; ?>
 
+<div class="home-bg">
+
 <section class="about">
 
    <div class="row">
@@ -43,7 +45,7 @@ if(isset($_SESSION['user_id'])){
 
       <div class="content">
          <h3>why choose us?</h3>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam veritatis minus et similique doloribus? Harum molestias tenetur eaque illum quas? Obcaecati nulla in itaque modi magnam ipsa molestiae ullam consequuntur.</p>
+         <p>Whether you're looking for the latest bestsellers, timeless classics, or niche genres, we offer a vast and diverse range of books for all tastes and interests. Find everything from fiction, drama, fantasy and mythological books all in one place.</p>
          <a href="contact.php" class="btn">contact us</a>
       </div>
 
@@ -60,8 +62,8 @@ if(isset($_SESSION['user_id'])){
    <div class="swiper-wrapper">
 
       <div class="swiper-slide slide">
-         <img src="images/pic-1.png" alt="">
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia tempore distinctio hic, iusto adipisci a rerum nemo perspiciatis fugiat sapiente.</p>
+         <img src="images/pic1.png" alt="">
+         <p>"A great read! This website really kept me hooked. Just like in cricket, it's all about the right strategy and patience. The way every category unfolds the story is like setting up the perfect delivery. Highly recommend it for anyone looking for a mix of genres!"</p>
          <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -69,12 +71,12 @@ if(isset($_SESSION['user_id'])){
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
          </div>
-         <h3>john deo</h3>
+         <h3>Rohit Sharma</h3>
       </div>
 
       <div class="swiper-slide slide">
-         <img src="images/pic-2.png" alt="">
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia tempore distinctio hic, iusto adipisci a rerum nemo perspiciatis fugiat sapiente.</p>
+         <img src="images/pic2.png" alt="">
+         <p>A truly captivating read! The authors have done an excellent job of weaving complex themes. The depth of the characters and the intricacy of the plot are truly impressive. I found the attention to detail in the world-building particularly fascinating—just like any well-researched piece of history or magical theory.</p>
          <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -82,12 +84,12 @@ if(isset($_SESSION['user_id'])){
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
          </div>
-         <h3>john deo</h3>
+         <h3>Hermione Granger</h3>
       </div>
 
       <div class="swiper-slide slide">
-         <img src="images/pic-3.png" alt="">
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia tempore distinctio hic, iusto adipisci a rerum nemo perspiciatis fugiat sapiente.</p>
+         <img src="images/pic3.png" alt="">
+         <p>I’ve always been a fan of books that challenge my perspective, and this one definitely did just that. It’s a refreshing experience to get lost in a story that pushes the boundaries of creativity and narrative.</p>
          <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -95,7 +97,7 @@ if(isset($_SESSION['user_id'])){
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
          </div>
-         <h3>john deo</h3>
+         <h3>Daniel Radcliffe</h3>
       </div>
 
       <div class="swiper-slide slide">
@@ -108,12 +110,12 @@ if(isset($_SESSION['user_id'])){
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
          </div>
-         <h3>john deo</h3>
+         <h3>Lily Harper</h3>
       </div>
 
       <div class="swiper-slide slide">
-         <img src="images/pic-5.png" alt="">
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia tempore distinctio hic, iusto adipisci a rerum nemo perspiciatis fugiat sapiente.</p>
+         <img src="images/pic5.png" alt="">
+         <p>I’ve always believed in the power of reading. Books help me stay focused and motivated, whether it’s on the field or off it. A good read can often give you a fresh perspective. Looking forward to checking out some of the recommendations here!</p>
          <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -121,7 +123,7 @@ if(isset($_SESSION['user_id'])){
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
          </div>
-         <h3>john deo</h3>
+         <h3>Shubman Gill</h3>
       </div>
 
       <div class="swiper-slide slide">
@@ -134,7 +136,7 @@ if(isset($_SESSION['user_id'])){
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
          </div>
-         <h3>john deo</h3>
+         <h3>Oliver Greene</h3>
       </div>
 
    </div>
@@ -145,7 +147,7 @@ if(isset($_SESSION['user_id'])){
 
 </section>
 
-
+</div>
 
 
 

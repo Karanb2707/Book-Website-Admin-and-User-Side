@@ -68,6 +68,8 @@ if(isset($_POST['submit'])){
    
 <?php include 'components/user_header.php'; ?>
 
+<div class="home-bg">
+
 <section class="form-container">
 
    <form action="" method="post">
@@ -83,7 +85,7 @@ if(isset($_POST['submit'])){
 
 </section>
 
-
+</div>
 
 
 

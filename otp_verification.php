@@ -131,6 +131,11 @@ if (isset($_POST['verify'])) {
     </style>
 </head>
 <body>
+
+<div class="home-bg">
+
+<section class="form-container">
+
     <form action="" method="POST">
         <h3>Verify OTP</h3>
         <?php if (isset($error)) { echo "<p class='error'>$error</p>"; } ?>
@@ -140,5 +145,10 @@ if (isset($_POST['verify'])) {
         </div>
         <input type="submit" name="verify" class="btn" value="Verify OTP">
     </form>
+
+    </section>
+
+</div>
+
 </body>
 </html>

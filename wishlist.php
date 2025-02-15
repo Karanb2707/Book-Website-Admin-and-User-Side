@@ -46,6 +46,8 @@ if(isset($_GET['delete_all'])){
    
 <?php include 'components/user_header.php'; ?>
 
+<div class="home-bg">
+
 <section class="products">
 
    <h3 class="heading">your wishlist</h3>
@@ -92,7 +94,7 @@ if(isset($_GET['delete_all'])){
 
 </section>
 
-
+</div>
 
 
 

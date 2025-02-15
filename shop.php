@@ -33,6 +33,8 @@ include 'components/wishlist_cart.php';
    
 <?php include 'components/user_header.php'; ?>
 
+<div class="home-bg">
+
 <section class="products">
 
    <h1 class="heading">latest products</h1>
@@ -71,7 +73,7 @@ include 'components/wishlist_cart.php';
 
 </section>
 
-
+</div>
 
 
 

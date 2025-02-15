@@ -53,6 +53,8 @@ if(isset($_POST['update_qty'])){
    
 <?php include 'components/user_header.php'; ?>
 
+<div class="home-bg">
+
 <section class="products shopping-cart">
 
    <h3 class="heading">shopping cart</h3>
@@ -97,7 +99,7 @@ if(isset($_POST['update_qty'])){
 
 </section>
 
-
+</div>
 
 
 

@@ -31,6 +31,8 @@ if(isset($_SESSION['user_id'])){
    
 <?php include 'components/user_header.php'; ?>
 
+<div class="home-bg">
+
 <section class="orders">
 
    <h1 class="heading">placed orders</h1>
@@ -69,7 +71,7 @@ if(isset($_SESSION['user_id'])){
 
 </section>
 
-
+</div>
 
 
 

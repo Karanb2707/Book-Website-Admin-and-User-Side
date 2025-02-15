@@ -135,6 +135,11 @@ if (isset($_POST['pay'])) {
     </style>
 </head>
 <body>
+
+<div class="home-bg">
+
+<section class="form-container">
+
     <form action="" method="POST">
         <h3>Credit Card Payment</h3>
         <div class="inputBox">
@@ -182,5 +187,10 @@ if (isset($_POST['pay'])) {
             document.getElementById('otp-popup').style.display = 'none';
         }
     </script>
+
+    </section>
+
+</div>
+
 </body>
 </html>
